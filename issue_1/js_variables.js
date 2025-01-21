@@ -12,3 +12,20 @@ console.log(z) // the value won't change here due to the order of code
 z = x + y
 
 console.log(z)
+
+let name;
+
+name = 'Tanveer Tayeb'
+
+console.log(name)
+
+const Pi = 3.1416
+
+let r = 5;
+
+let area;
+
+area = Pi * r * r 
+
+console.log(area)
+
