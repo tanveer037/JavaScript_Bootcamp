@@ -13,6 +13,12 @@ console.log(student.cgpa)
 
 //we can also declare an empty object and entry the properties later
 
+student.fullname = function(){
+    return this.firstName + " " + this.lastName
+}
+
+console.log(student.fullname)
+
 const student2 = {
     firstName : 'Asib',
     lastName : 'Ahmed',
@@ -33,3 +39,24 @@ const math_object = {
 cgpa_difference = math_object.substract(student2.cgpa,student.cgpa)
 
 console.log(cgpa_difference)
+
+//deleting an object property using 'delete' keyword
+
+delete student2.lastName
+
+//objects can be nested
+
+colors = {
+    higher_end_spectrum : {
+        h1 : 'Violet',
+        h2 : 'Blue'
+    },
+    lower_end_spectrum : {
+        l1 : 'Orange',
+        l2 : 'Red'
+    }
+}
+
+console.log(colors.higher_end_spectrum.h1)
+
+console.log(colors.lower_end_spectrum)
