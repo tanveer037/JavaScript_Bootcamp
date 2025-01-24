@@ -17,7 +17,7 @@ student.fullname = function(){
     return this.firstName + " " + this.lastName
 }
 
-console.log(student.fullname)
+console.log(student.fullname())
 
 const student2 = {
     firstName : 'Asib',
@@ -60,3 +60,21 @@ colors = {
 console.log(colors.higher_end_spectrum.h1)
 
 console.log(colors.lower_end_spectrum)
+
+//bellow is an example of object constructor
+
+function Pet(species,gender,color){
+    this.species = species,
+    this.gender = gender,
+    this.color = color
+}
+
+//I don't understand why output shows undefined if I don't put new before defining Pet
+const coco = new Pet('cat','male','grey')
+
+console.log(coco)
+
+//bellow shows undefined, explain reason
+const mao = Pet('cat','male','orange')
+
+console.log(mao)
