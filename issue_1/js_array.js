@@ -41,3 +41,11 @@ function myFunction(value) {
 
 console.log(new_text)
 
+//The splice() method can be used to add new items to an array:
+
+fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits)
+
+//ES2023 added the Array toSpliced() method as a safe way to splice an array without altering the original array.
+const myFruits = fruits.slice(2);
+console.log(myFruits)
