@@ -1,3 +1,4 @@
+//this block of code won't run in node js because XMLHttpRequest is not available in node js package
 const request = new XMLHttpRequest()
 
 request.addEventListener('readystatechange', () => {
