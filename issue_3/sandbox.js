@@ -1,5 +1,5 @@
 //this block of code won't run in node js because XMLHttpRequest is not available in node js package
-function getTodos(callback){
+function getTodos(source, callback){
     const request = new XMLHttpRequest()
     let text = null
     
@@ -14,14 +14,14 @@ function getTodos(callback){
     })
     
     
-    request.open('GET','https://jsonplaceholder.typicode.com/todos')
+    request.open('GET', source)
     request.send()
 }
 
 console.log(1)
 console.log(2)
 
-getTodos(  (err, data) =>{
+getTodos( 'game_playtime/warframe.json' ,(err, data) =>{
     console.log('callback fired')
     
     if(err){
@@ -35,4 +35,5 @@ getTodos(  (err, data) =>{
 
 console.log(3)
 console.log(4)
+console.log(5)
 
